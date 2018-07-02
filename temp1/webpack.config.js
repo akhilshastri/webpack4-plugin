@@ -13,7 +13,7 @@ module.exports = {
                     {
                         loader: path.resolve(__dirname, "./loaders/scope-provider-loader.js"),
                         options: {
-                            name: "pne-app",
+                            name: "pneApp",
                         },
                     },
                     {
