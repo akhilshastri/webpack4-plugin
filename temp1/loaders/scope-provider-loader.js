@@ -11,5 +11,5 @@ module.exports = function(content) {
 
     const path = `__webpack_public_path__ + ${JSON.stringify(url)};`;
 
-    return `export default ${path}`;
+    return 'module.exports =  (function (){ /* comment*/' + content +'}) ()' ;//`export default ${path}`;
 };

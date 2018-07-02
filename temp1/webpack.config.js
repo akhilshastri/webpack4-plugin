@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    devtool: 'inline-source-map',
     module: {
         rules: [
             {
@@ -12,7 +13,7 @@ module.exports = {
                     {
                         loader: path.resolve(__dirname, "./loaders/scope-provider-loader.js"),
                         options: {
-                            name: "demo.[ext]",
+                            name: "pne-app",
                         },
                     },
                     {
